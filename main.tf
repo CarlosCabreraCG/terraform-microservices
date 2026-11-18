@@ -107,6 +107,10 @@ resource "azurerm_container_app" "app" {
       }
 
       env {
+        name  = "AZURE_STORAGE_BLOB_NAME"
+        value = "imagen.jpg"
+      }
+      env {
         name  = "AZURE_CLIENT_ID"
         value = azurerm_user_assigned_identity.app_identity.client_id
       }
