@@ -1,0 +1,22 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+
+# Archivos de variables sensibles
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+
+# Archivos locales
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Credenciales
+*.pem
+*.key
