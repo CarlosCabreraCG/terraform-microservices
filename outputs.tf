@@ -10,3 +10,19 @@ output "container_app_name" {
 output "container_app_url" {
   value = "https://${azurerm_container_app.app.ingress[0].fqdn}"
 }
+
+output "key_vault_name" {
+  value = azurerm_key_vault.kv.name
+}
+
+output "key_vault_uri" {
+  value = azurerm_key_vault.kv.vault_uri
+}
+
+output "storage_account_name" {
+  value = azurerm_storage_account.storage.name
+}
+
+output "storage_container_name" {
+  value = azurerm_storage_container.images.name
+}
